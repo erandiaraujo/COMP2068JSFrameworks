@@ -1,4 +1,4 @@
-// Import the prompt package
+// Import the prompt package.
 const prompt = require('prompt');
 
 // Configure prompt
