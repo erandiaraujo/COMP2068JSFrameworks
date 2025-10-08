@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Contact Us - The Striped Umbrella Spa</title>
+    <meta name="author" content="Erandi Canafistula Araujo">
+    <meta name="description" content="Contact The Striped Umbrella Spa for reservations and inquiries">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="assets/images/su_banner.gif" alt="The Striped Umbrella Banner">
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main class="content">
+            <h2>Contact Us</h2>
+            
+            <form>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <label for="fname">First Name:*</label>
+                    <input type="text" id="fname" name="fname" required maxlength="25">
+                    <br><br>
+                    
+                    <label for="lname">Last Name:*</label>
+                    <input type="text" id="lname" name="lname" required maxlength="25">
+                    <br><br>
+                    
+                    <label for="email">Email:*</label>
+                    <input type="email" id="email" name="email" required maxlength="35">
+                    <br><br>
+                    
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+                    <br><br>
+                    <p>Please select the music genre(s) that you like:</p>
+                    <input type="checkbox" id="classic" name="genre" value="Classic">
+                    <label for="classic">Classic</label><br>
+                    
+                    <input type="checkbox" id="jazz" name="genre" value="Jazz">
+                    <label for="jazz">Jazz</label><br>
+                    
+                    <input type="checkbox" id="blues" name="genre" value="Blues">
+                    <label for="blues">Blues</label><br>
+                    
+                    <input type="checkbox" id="instrumental" name="genre" value="Instrumental">
+                    <label for="instrumental">Instrumental</label><br><br>
+                    
+                </fieldset>
+                
+                <fieldset>
+                    <label for="hear-about">How did you hear about us?</label>
+                    <select id="hear-about" name="hear-about">
+                        <option value="website" selected>Our website</option>
+                        <option value="friends">Friends</option>
+                        <option value="tv">TV Adv.</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <br><br>
+                    <label>Would you recommend us to your friends?</label><br>
+                    <input type="radio" id="yes" name="recommend" value="yes" checked>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="recommend" value="no">
+                    <label for="no">No</label>
+                    <input type="radio" id="maybe" name="recommend" value="maybe">
+                    <label for="maybe">Maybe</label>
+                    <br><br>
+                    <legend>Your Message</legend>
+                    <label for="comments">Your request:</label><br>
+                    <textarea id="comments" name="comments" rows="5" cols="40"></textarea>
+                    <br><br>
+                    <input type="checkbox" id="updates" name="updates" checked>
+                    <label for="updates">Sign me up for email updates</label>
+                    <br><br>
+                    <input type="submit" value="Register">
+                </fieldset>
+            </form>
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.8659975098917!2d-79.39233542411718!3d43.671756671101264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2e0b64e1140d%3A0xd11156503e310196!2sSpa%20at%20Four%20Seasons%20Toronto!5e0!3m2!1spt-BR!2sca!4v1758912059210!5m2!1spt-BR!2sca" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+            </iframe>
+        </main>
+        
+        <footer>
+            Copyright © 2023 ILAC and EFREI Paris – HTML-CSS major lab-work - created by: Erandi Canafistula Araujo - All rights reserved
+        </footer>
+    </div>
+</body>
+</html>

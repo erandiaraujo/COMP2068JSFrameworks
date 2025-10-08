@@ -1,0 +1,179 @@
+/* Example: All the elements have margin of 0 from the top, bottom, left, and right */
+* {
+    margin: 0;
+}
+
+/* Q1: All HTML5 new semantic elements should be displayed as block-level elements */
+header,
+nav,
+main,
+footer,
+section,
+article,
+aside,
+figure,
+figcaption {
+    display: block;
+}
+
+/* Q2: Style the body element */
+body {
+    color: #333333;
+    background-image: url('../assets/images/dark-wood2.jpg');
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Q3: Style the div element with class "container" */
+.container {
+    width: 950px;
+    margin: 5px auto;
+    background-color: #f5f5dc;
+}
+
+/* Q4: Style any element with class value of "content" */
+.content {
+    line-height: 1.4em;
+    padding: 10px;
+}
+
+/* Q5: Style the header, nav, and footer elements */
+header,
+nav,
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+/* Q6: Style the unordered list element inside nav element */
+nav ul {
+    margin: 0;
+    padding: 5px;
+}
+
+/* Q7: Style the list items of the main navigation */
+nav li {
+    display: inline;
+    margin-right: 40px;
+    text-transform: uppercase;
+}
+
+/* Q8: Add the 4 pseudo classes effect to the anchor tags of the main navigation */
+nav a:link {
+    color: #3498db;
+}
+
+nav a:visited {
+    color: #9b59b6;
+}
+
+nav a:hover {
+    color: #e74c3c;
+}
+
+nav a:active {
+    color: #f39c12;
+}
+
+/* Q9: Style any anchor element */
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+/* Q10: Style the three headings h1, h2, and h3 */
+h1,
+h2,
+h3 {
+    margin: 10px;
+    text-transform: uppercase;
+    color: #2c3e50;
+}
+
+/* Q11: Style the custom class named "img-centre" */
+.img-centre {
+    display: block;
+    margin: 5px auto;
+    padding: 2px;
+}
+
+/* Q12: Style the audio and video elements */
+audio,
+video {
+    display: block;
+    margin: 10px auto;
+}
+
+/* Q13: Style any table element */
+table {
+    width: 800px;
+    margin: 10px auto;
+    border-collapse: collapse;
+}
+
+/* Q14: Style both td and th elements of any table */
+td,
+th {
+    border: 1px solid #34495e;
+    padding: 2px 5px;
+    background-color: #ecf0f1;
+}
+
+/* Q15: Style both th inside any table and td inside tfoot */
+th,
+tfoot td {
+    text-transform: uppercase;
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+
+/* Q16: Style any dt element */
+dt {
+    font-weight: bold;
+}
+
+/* Q17: Style any footer element */
+footer {
+    font-size: 80%;
+    text-align: center;
+    padding: 1px 0;
+}
+
+/* Q18: Style any iframe element */
+iframe {
+    display: block;
+    margin: 10px auto;
+}
+
+/* Q19: Style any fieldset element */
+fieldset {
+    width: 500px;
+    margin: 20px auto;
+    border: 2px solid #2c3e50;
+    background-color: #ecf0f1;
+}
+
+/* Q20: Style any legend element */
+legend {
+    font-style: italic;
+    color: #2c3e50;
+    background-color: #bdc3c7;
+    margin: 0 10px;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+/* Q21: Style the input element with type="submit" */
+input[type="submit"] {
+    border: 2px solid #2c3e50;
+    padding: 5px;
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+/* Q22: Style the input element with type="submit" on hover state */
+input[type="submit"]:hover {
+    color: #2c3e50;
+    background-color: #f39c12;
+    cursor: pointer;
+}
