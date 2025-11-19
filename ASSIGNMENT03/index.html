@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Erandi Araujo, Julia Marques, Juliana Pivaro">
+    <title>Basic Geometry</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 70%;
+            margin: auto;
+            padding: 5px;
+            background-color: #ccdddd;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        section {
+            width: 65%;
+            margin: 20px auto;
+            padding: 5px;
+            background-color: #ffffff;
+            border: 1px solid #c6dee9;
+            border-radius: 10px;
+        }
+
+        .go {
+            margin-top: 10px;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        div {
+            margin: 10px 0;
+        }
+        
+        input {
+            margin: 5px 0;
+        }
+        
+        input[readonly] {
+            background-color: #f7f2f2;
+            min-width: 300px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="top">Basic Geometry</h1>
+        <p>In this section, we are going to find the Area of some two-dimension shapes</p>
+        <p>You can click on any shape below:</p>
+        <ul>
+            <li><a href="#circle">Circle</a></li>
+            <li><a href="#triangle">Triangle</a></li>
+            <li><a href="#square">Square</a></li>
+            <li><a href="#rectangle">Rectangle</a></li>
+        </ul>
+
+        <section id="circle">
+            <h2>Circle Area</h2>
+            <div>
+                <label>Enter the value of the circle's radius:</label>
+                <input type="text" id="radius">
+            </div>
+            <div>
+                <label>Result:</label>
+                <input type="text" id="circle-area" readonly>
+            </div>
+            <button onclick="getCircleArea()">Calculate</button>
+            <hr>
+            <div class="go">
+                <a href="#top">Go to Top</a>
+            </div>
+        </section>
+
+        <section id="triangle">
+            <h2>Triangle Area</h2>
+            <div>
+                <label>Enter base:</label>
+                <input type="text" id="base">
+            </div>
+            <div>
+                <label>Enter height:</label>
+                <input type="text" id="height">
+            </div>
+            <div>
+                <label>Result:</label>
+                <input type="text" id="triangle-area" readonly>
+            </div>
+            <button onclick="getTriangleArea()">Calculate</button>
+            <hr>
+            <div class="go">
+                <a href="#top">Go to Top</a>
+            </div>
+        </section>
+
+        <section id="square">
+            <h2>Square Area</h2>
+            <div>
+                <label>Enter side length:</label>
+                <input type="text" id="side">
+            </div>
+            <div>
+                <label>Result:</label>
+                <input type="text" id="square-area" readonly>
+            </div>
+            <button onclick="getSquareArea()">Calculate</button>
+            <hr>
+            <div class="go">
+                <a href="#top">Go to Top</a>
+            </div>
+        </section>
+
+        <section id="rectangle">
+            <h2>Rectangle Area</h2>
+            <div>
+                <label>Enter width:</label>
+                <input type="text" id="width">
+            </div>
+            <div>
+                <label>Enter height:</label>
+                <input type="text" id="rect-height">
+            </div>
+            <div>
+                <label>Result:</label>
+                <input type="text" id="rectangle-area" readonly>
+            </div>
+            <button onclick="getRectangleArea()">Calculate</button>
+            <hr>
+            <div class="go">
+                <a href="#top">Go to Top</a>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function getCircleArea() {
+            let radiusInput = document.getElementById("radius");
+            let r = parseFloat(radiusInput.value.trim());
+            if (!isNaN(r)) {
+                document.getElementById("circle-area").value = (Math.PI * r * r).toFixed(2);
+            } else {
+                document.getElementById("circle-area").value = "Error: Please enter a valid number";
+            }
+        }
+
+        function getTriangleArea() {
+            let b = parseFloat(document.getElementById("base").value.trim());
+            let h = parseFloat(document.getElementById("height").value.trim());
+            if (!isNaN(b) && !isNaN(h)) {
+                document.getElementById("triangle-area").value = (0.5 * b * h).toFixed(2);
+            } else {
+                document.getElementById("triangle-area").value = "Error: Please enter valid numbers";
+            }
+        }
+
+        function getSquareArea() {
+            let a = parseFloat(document.getElementById("side").value.trim());
+            if (!isNaN(a)) {
+                document.getElementById("square-area").value = (a * a).toFixed(2);
+            } else {
+                document.getElementById("square-area").value = "Error: Please enter a valid number";
+            }
+        }
+
+        function getRectangleArea() {
+            let w = parseFloat(document.getElementById("width").value.trim());
+            let h = parseFloat(document.getElementById("rect-height").value.trim());
+            if (!isNaN(w) && !isNaN(h)) {
+                document.getElementById("rectangle-area").value = (w * h).toFixed(2);
+            } else {
+                document.getElementById("rectangle-area").value = "Error: Please enter valid numbers";
+            }
+        }
+    </script>
+</body>
+</html>
