@@ -12,10 +12,10 @@ Dave Grohl: Drummer
 Installation
 
 Navigate to the project folder:
- cd nirvana-site
+ cd nirvana-site;
 Install dependencies:
-  npm install
+  npm install;
 Start the server:
-  npm start
+  npm start;
 Open your browser and visit:
   http://localhost:3000
